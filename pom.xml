@@ -18,7 +18,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -69,8 +69,8 @@
   <artifactId>maven-compiler-plugin</artifactId>
   <version>3.11.0</version> <!-- try latest -->
   <configuration>
-        <source>11</source>
-        <target>11</target>
+        <source>17</source>
+        <target>17</target>
     <compilerArgs>
       <arg>--add-opens</arg>
       <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
