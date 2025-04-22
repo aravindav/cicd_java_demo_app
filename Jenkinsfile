@@ -1,3 +1,4 @@
+@Library('jenkins-shared-library') _
 pipeline{
 
     agent any 
@@ -8,7 +9,7 @@ pipeline{
         stage('Gt Checkout'){
             steps {
                 script {
-                    git branch: 'main', url: 'https://github.com/aravindav/cicd_java_demo_app.git'
+                    gitCheckout(branch : "main", url : "https://github.com/aravindav/cicd_java_demo_app.git")
                 }
             }
         }
